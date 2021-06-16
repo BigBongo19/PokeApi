@@ -1,11 +1,7 @@
-/* Detail pagina per Pokémon */
-
-// container ophalenj d.m.v. het ID
 const container = document.getElementById('pokemon-details');
 const prevBtn = document.getElementById('btn_prev');
 const nextBtn = document.getElementById('btn_next');
 
-// ID van de pokemon ophalen uit de URL
 const params = new URLSearchParams(window.location.search);
 let pokemon_id = parseInt(params.get('pokemon'));
 
@@ -39,8 +35,6 @@ function getDetailsOfPokemon(pokemon_id) {
     })
     controlButtons();
 }
-
-
 
 getDetailsOfPokemon(pokemon_id);
 
